@@ -40,9 +40,8 @@ const CTASection = () => {
               </a>
             </Button>
             <Button 
-              variant="outline"
               size="lg"
-              className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+              className="bg-white text-primary font-semibold hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300"
               asChild
             >
               <a href="tel:1221323197">
