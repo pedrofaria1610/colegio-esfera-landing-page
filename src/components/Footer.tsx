@@ -1,4 +1,4 @@
-import { MapPin, Phone, Instagram, Mail } from 'lucide-react';
+import { MapPin, Phone, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -6,71 +6,44 @@ const Footer = () => {
   return (
     <footer id="contato" className="bg-foreground text-background">
       <div className="container-custom section-padding pb-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">E</span>
+              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-heading font-bold text-lg">E</span>
               </div>
-              <span className="font-heading font-bold text-2xl">
+              <span className="font-heading font-bold text-xl">
                 Colégio <span className="text-primary">Esfera</span>
               </span>
             </div>
-            <p className="text-background/70 mb-6 max-w-md">
+            <p className="text-background/70 text-sm leading-relaxed">
               Transformando o futuro em excelência há mais de 20 anos. 
               Educação Infantil, Ensino Fundamental e Ensino Médio em Caraguatatuba.
             </p>
-            <div className="flex gap-3">
-              <a
-                href="https://instagram.com/colegioesfera"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://wa.me/551221323197"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors"
-                aria-label="WhatsApp"
-              >
-                <Phone className="w-5 h-5" />
-              </a>
-              <a
-                href="mailto:contato@colegioesfera.com.br"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-accent transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Links Rápidos</h3>
-            <ul className="space-y-3">
+            <h3 className="font-heading font-semibold text-base mb-4">Links Rápidos</h3>
+            <ul className="space-y-2">
               <li>
-                <a href="#sobre" className="text-background/70 hover:text-primary transition-colors">
+                <a href="#sobre" className="text-background/70 hover:text-primary transition-colors text-sm">
                   Sobre a Escola
                 </a>
               </li>
               <li>
-                <a href="#ensino" className="text-background/70 hover:text-primary transition-colors">
+                <a href="#ensino" className="text-background/70 hover:text-primary transition-colors text-sm">
                   Níveis de Ensino
                 </a>
               </li>
               <li>
-                <a href="#diferenciais" className="text-background/70 hover:text-primary transition-colors">
+                <a href="#diferenciais" className="text-background/70 hover:text-primary transition-colors text-sm">
                   Diferenciais
                 </a>
               </li>
               <li>
-                <a href="#depoimentos" className="text-background/70 hover:text-primary transition-colors">
+                <a href="#depoimentos" className="text-background/70 hover:text-primary transition-colors text-sm">
                   Depoimentos
                 </a>
               </li>
@@ -79,11 +52,11 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Contato</h3>
-            <ul className="space-y-4">
+            <h3 className="font-heading font-semibold text-base mb-4">Contato</h3>
+            <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-background/70">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-background/70 text-sm">
                   Rua Sebastião Mariano Nepomuceno, 481, Centro<br />
                   Caraguatatuba – SP
                 </span>
@@ -91,9 +64,9 @@ const Footer = () => {
               <li>
                 <a 
                   href="tel:1221323197" 
-                  className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
+                  className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors text-sm"
                 >
-                  <Phone className="w-5 h-5 text-primary" />
+                  <Phone className="w-4 h-4 text-primary" />
                   (12) 2132-3197
                 </a>
               </li>
@@ -102,9 +75,9 @@ const Footer = () => {
                   href="https://instagram.com/colegioesfera"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
+                  className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors text-sm"
                 >
-                  <Instagram className="w-5 h-5 text-primary" />
+                  <Instagram className="w-4 h-4 text-primary" />
                   @colegioesfera
                 </a>
               </li>
