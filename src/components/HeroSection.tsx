@@ -11,7 +11,7 @@ const HeroSection = () => {
           alt="Alunos aprendendo no Colégio Esfera"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-transparent" />
       </div>
 
       {/* Content */}
@@ -46,13 +46,15 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 animate-fade-up"
             style={{ animationDelay: '0.3s' }}
           >
-            <Button variant="hero" asChild>
+            <Button 
+              variant="heroAccent"
+              asChild
+            >
               <a href="#contato">Conheça Nossa Escola</a>
             </Button>
             <Button 
-              variant="outline" 
               size="lg"
-              className="bg-background/10 border-primary-foreground/30 text-primary-foreground hover:bg-background/20 hover:text-primary-foreground"
+              className="bg-white text-primary font-semibold hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
               asChild
             >
               <a href="#ensino">Ver Níveis de Ensino</a>
