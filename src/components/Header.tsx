@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -41,9 +41,13 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex">
-            <Button variant="default" size="sm" asChild>
-              <a href="#contato">Agende uma Visita</a>
+          <div className="hidden md:flex items-center gap-4">
+            <a href="tel:1221323197" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <Phone size={18} />
+              <span className="font-medium">(12) 2132-3197</span>
+            </a>
+            <Button variant="default" size="sm">
+              Agende uma Visita
             </Button>
           </div>
 
