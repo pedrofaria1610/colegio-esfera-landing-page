@@ -1,5 +1,6 @@
 import { Baby, BookOpen, GraduationCap, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 
 const teachingLevels = [
   {
@@ -7,6 +8,7 @@ const teachingLevels = [
     title: 'Educação Infantil',
     age: '2 a 5 anos',
     color: 'success',
+    link: '/educacao-infantil',
     description: 'Desenvolvimento lúdico, social, emocional e cognitivo em um ambiente acolhedor e estimulante.',
     features: [
       'Aprendizado através do brincar',
@@ -20,6 +22,7 @@ const teachingLevels = [
     title: 'Ensino Fundamental',
     age: '6 a 14 anos',
     color: 'primary',
+    link: '/ensino-fundamental',
     description: 'Formação sólida com estímulo ao pensamento crítico e projetos pedagógicos inovadores.',
     features: [
       'Base curricular completa',
@@ -33,6 +36,7 @@ const teachingLevels = [
     title: 'Ensino Médio',
     age: '15 a 17 anos',
     color: 'accent',
+    link: '/ensino-medio',
     description: 'Preparação completa para vestibulares, ENEM e desenvolvimento de autonomia para a vida profissional.',
     features: [
       'Preparação para vestibulares',
@@ -94,7 +98,7 @@ const TeachingSection = () => {
             return (
               <div
                 key={index}
-                className="bg-card rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden group"
+                className="bg-card rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden group flex flex-col"
               >
                 {/* Card Header */}
                 <div className={`${colors.bg} p-6`}>
@@ -110,12 +114,12 @@ const TeachingSection = () => {
                 </div>
 
                 {/* Card Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <p className="text-muted-foreground mb-6">
                     {level.description}
                   </p>
 
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-3 mb-6 flex-grow">
                     {level.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
                         <div className={`w-1.5 h-1.5 rounded-full ${colors.icon}`} />
@@ -126,10 +130,13 @@ const TeachingSection = () => {
 
                   <Button 
                     variant={colors.button}
-                    className="w-full group-hover:gap-4 transition-all"
+                    className="w-full group-hover:gap-4 transition-all mt-auto"
+                    asChild
                   >
-                    Saiba Mais
-                    <ArrowRight className="w-4 h-4" />
+                    <Link to={level.link}>
+                      Saiba Mais
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </div>

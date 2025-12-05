@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 px-4">
+      <div className="container-custom relative z-10">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
@@ -48,13 +48,15 @@ const HeroSection = () => {
           >
             <Button 
               variant="heroAccent"
+              size="lg"
+              className="min-w-[220px] justify-center"
               asChild
             >
               <a href="#contato">Conheça Nossa Escola</a>
             </Button>
             <Button 
               size="lg"
-              className="bg-white text-primary font-semibold hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+              className="min-w-[220px] justify-center bg-white text-primary font-semibold hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
               asChild
             >
               <a href="#ensino">Ver Níveis de Ensino</a>
@@ -67,12 +69,12 @@ const HeroSection = () => {
             style={{ animationDelay: '0.4s' }}
           >
             <div>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">20+</div>
-              <div className="text-primary-foreground/70 text-sm">Anos de Tradição</div>
+              <div className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">Sistema</div>
+              <div className="text-primary-foreground/70 text-sm">Etapa de Ensino</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">500+</div>
-              <div className="text-primary-foreground/70 text-sm">Alunos Formados</div>
+              <div className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">Bilíngue</div>
+              <div className="text-primary-foreground/70 text-sm">Inglês Integrado</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">100%</div>
