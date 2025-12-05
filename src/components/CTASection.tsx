@@ -32,6 +32,8 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               variant="heroAccent"
+              size="lg"
+              className="min-w-[240px] justify-center"
               asChild
             >
               <a href="https://wa.me/551221323197" target="_blank" rel="noopener noreferrer">
@@ -41,11 +43,11 @@ const CTASection = () => {
             </Button>
             <Button 
               size="lg"
-              className="bg-white text-primary font-semibold hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="min-w-[240px] justify-center bg-white text-primary font-semibold hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300"
               asChild
             >
               <a href="tel:1221323197">
-                Ligar Agora: (12) 2132-3197
+                Ligar: (12) 2132-3197
               </a>
             </Button>
           </div>
