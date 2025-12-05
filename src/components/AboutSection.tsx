@@ -14,7 +14,7 @@ const values = [
   {
     icon: Heart,
     title: 'Acolhimento',
-    description: 'Ambiente seguro e afetuoso para o desenvolvimento integral.',
+    description: 'Ambiente seguro, inclusivo e afetuoso para todos.',
   },
   {
     icon: Users,
@@ -34,17 +34,18 @@ const AboutSection = () => {
               Sobre Nós
             </span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
-              Uma História de <span className="text-primary">Compromisso</span> com a Educação
+              Uma Escola <span className="text-primary">Moderna</span> e Acolhedora
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Há mais de duas décadas, o Colégio Esfera tem sido referência em educação de qualidade 
-              em Caraguatatuba. Nossa missão é formar cidadãos conscientes, críticos e preparados 
-              para os desafios do futuro.
+              O Colégio Esfera nasceu com uma proposta inovadora: unir excelência acadêmica, 
+              metodologias modernas e um ambiente verdadeiramente inclusivo. Somos uma escola 
+              nova, mas já nos destacamos pela qualidade do ensino e pelo cuidado com cada aluno.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Com uma equipe de professores qualificados e uma infraestrutura moderna, oferecemos 
-              um ambiente propício ao aprendizado, onde cada aluno é valorizado em sua individualidade 
-              e estimulado a alcançar seu máximo potencial.
+              Contamos com uma equipe de professores altamente capacitados e comprometidos com a 
+              educação de qualidade. Nossa infraestrutura moderna e nosso ambiente acolhedor 
+              proporcionam o espaço ideal para o desenvolvimento integral de cada estudante, 
+              respeitando suas individualidades e estimulando seu máximo potencial.
             </p>
 
             {/* Values Grid */}
@@ -73,8 +74,9 @@ const AboutSection = () => {
                 <div className="aspect-[4/5] rounded-2xl bg-primary/10 overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-success/20 flex items-center justify-center">
                     <div className="text-center p-6">
-                      <div className="text-5xl font-heading font-bold text-primary">20+</div>
-                      <div className="text-muted-foreground mt-2">Anos de Excelência</div>
+                      <div className="text-4xl font-heading font-bold text-primary">Sistema</div>
+                      <div className="text-2xl font-heading font-bold text-primary">Etapa</div>
+                      <div className="text-muted-foreground mt-2">Material Pedagógico</div>
                     </div>
                   </div>
                 </div>
@@ -89,14 +91,17 @@ const AboutSection = () => {
                 <div className="aspect-square rounded-2xl bg-success/10 flex items-center justify-center">
                   <div className="text-center p-4">
                     <div className="text-4xl font-heading font-bold text-success">100%</div>
-                    <div className="text-muted-foreground text-sm mt-1">Dedicação</div>
+                    <div className="text-muted-foreground text-sm mt-1">Inclusiva</div>
                   </div>
                 </div>
                 <div className="aspect-[4/5] rounded-2xl bg-primary overflow-hidden">
                   <div className="w-full h-full flex items-center justify-center p-6">
                     <div className="text-center">
-                      <div className="text-primary-foreground font-heading font-bold text-lg">
-                        "Educação que transforma vidas"
+                      <div className="text-primary-foreground font-heading font-bold text-xl">
+                        Escola Bilíngue
+                      </div>
+                      <div className="text-primary-foreground/80 text-sm mt-2">
+                        Inglês integrado ao currículo
                       </div>
                     </div>
                   </div>
